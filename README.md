@@ -20,6 +20,22 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 ```
 
+## Notes
+
+`pyenv_wrapper` was built for the latest fish, but at least 2.2.0 is required. If you can't upgrade your build, append the following code to your `~/.config/fish/config.fish`.
+
+```fish
+for file in ~/.config/fish/conf.d/*.fish
+    source $file
+end
+```
+
+Or let me do that for you.
+
+```fish
+curl -L git.io/confd >> ~/.config/fish/config.fish
+```
+
 ## Usage
 
 ### List all virtualenvs
