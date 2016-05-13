@@ -22,9 +22,36 @@ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-vi
 
 ## Usage
 
+### List all virtualenvs
+
 ```fish
-pyenv_wrapper
+lsvirtualenv
 ```
+
+### Create a virtualenv
+
+```
+mkvirtualenv 2.7.11 myvenv
+```
+
+### Remove a virtualenv
+
+```
+rmvirtualenv myvenv
+```
+
+### Activate a virtualenv
+
+```
+workon myvenv
+```
+
+### Upgrade pyenv and pyenv-virtualenv
+
+```
+pyenv_upgrade
+```
+
 
 [travis-link]: https://travis-ci.org/robsonpeixoto/pyenv_wrapper
 [travis-badge]: https://img.shields.io/travis/robsonpeixoto/pyenv_wrapper.svg
