@@ -1,5 +1,5 @@
 if test -z "$PYENV_ROOT"
-  set -U PYENV_ROOT "$HOME/.pyenv"
+    set -U PYENV_ROOT "$HOME/.pyenv"
 end
 
 set -gx PATH $PYENV_ROOT/bin $PATH
