@@ -1,4 +1,4 @@
 set -l f '/usr/local/opt/pyenv/completions/pyenv.fish'
-test -f $f
+if test -f $f
     source $f
 end
