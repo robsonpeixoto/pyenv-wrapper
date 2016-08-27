@@ -1,4 +1,4 @@
-set -U PYENV_ROOT "$HOME/.pyenv"
+setenv PYENV_ROOT "$HOME/.pyenv"
 
 if not type -q pyenv;
     echo "Please, install pyenv: brew install pyenv"
