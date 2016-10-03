@@ -3,6 +3,12 @@ function workon -a venv_name -d "Activate a virtualenv"
         echo "usage: workon <virtualenv name>"
         return 1
     end
-    source (pyenv prefix $venv_name)/bin/activate.fish
+    
+    set -l prefix (pyenv prefix $venv_name)
+    if test $status -ne 0
+        return $status
+    end
+    
+    source $prefix/bin/activate.fish
     hash -r
 end
